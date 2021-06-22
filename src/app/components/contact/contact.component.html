@@ -1,0 +1,54 @@
+<div class="contacto">
+    <div class="row mt-5">
+        <ul>
+            <li class="col-md-2">
+                <a href="https://github.com/navaxa/" target="_blank" class="fa fa-github" aria-hidden="true"></a>
+            </li>
+
+            <li class="col-md-2">
+                <a href="https://api.whatsapp.com/send?phone=525518248779&text=Hola Miguel Nava" target="_blank"
+                    class="fa fa-whatsapp" aria-hidden="true"></a>
+            </li>
+
+            <li class="col-md-2">
+                <a href="mailto:15030463@itesa.edu.mx" target="_blank" class="fa fa-envelope-o" aria-hidden="true"></a>
+            </li>
+
+            <li class="col-md-2">
+                <a href="tel:+525518248779" target="_blank" class="fa fa-phone" aria-hidden="true"></a>
+            </li>
+        </ul>
+        <div class="LI-profile-badge col-md-12" data-version="v1" data-size="medium" data-locale="es_ES"
+        data-type="horizontal" data-theme="dark" data-vanity="miguelangelnavazavala"><a class="LI-simple-link"
+            href='https://mx.linkedin.com/in/miguelangelnavazavala?trk=profile-badge' target="_blank"><i
+                class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">{{ "contact.button" | translate | titlecase }}</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">{{ "contact.modal.head" | translate }}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <app-form></app-form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ "contact.modal.button" | translate | titlecase }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

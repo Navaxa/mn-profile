@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Miguel Nava</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link item-nav" routerLink="/about" routerLinkActive="active">{{ "navbar.about" | translate | titlecase }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item-nav" routerLink="/skills" routerLinkActive="active">{{ "navbar.skills" | translate | titlecase }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item-nav" routerLink="/portfolio" routerLinkActive="active">{{ "navbar.portfolio" | translate | titlecase }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item-nav" routerLink="/certified" routerLinkActive="active">{{ "navbar.certifieds" | translate | titlecase }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item-nav" routerLink="/contact" routerLinkActive="active">{{ "navbar.contact" | translate | titlecase }}</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button [ngStyle]="{'background': this.color}" class="btn btn-secondary my-2 my-sm-0" (click)="onChange()" type="button">{{ language | uppercase }} <i class="fas fa-globe"></i> </button>
+        </form>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,104 @@
+<form
+    [formGroup]="form"
+    (ngSubmit)="send()"
+    autocomplete="off"
+    class="text-start">
+    <div class="mb-3">
+        <div class="mb-3">
+            <label 
+                class="form-label">{{ "contact.modal.body.name" | translate | titlecase }}
+            </label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="name"
+                name="name"
+                >
+            <div 
+                *ngIf="isValid('name')"
+                class="form-text">
+                {{ "contact.modal.body.formLabels.name" | translate }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label 
+                class="form-label">{{ "contact.modal.body.subject" | translate | titlecase }}
+            </label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="subject"
+                >
+            <div
+                *ngIf="isValid('subject')" 
+                class="form-text">
+                {{ "contact.modal.body.formLabels.subject" | translate }}
+            </div>
+        </div>
+        <label 
+            class="form-label">Email
+        </label>
+        <input 
+            type="email" 
+            class="form-control" 
+            aria-describedby="emailHelp"
+            formControlName="email"
+            >
+        <div 
+            *ngIf="isValid('email') || isEmail()" 
+            class="form-text">{{ "contact.modal.body.formLabels.email" | translate }}
+        </div>
+    </div>
+    
+    <div 
+        class="form-floating my-5">
+        <textarea 
+            class="form-control" 
+            placeholder="Leave a comment here"
+            formControlName="message"></textarea>
+        <label>{{ "contact.modal.body.message" | translate }}</label>
+        <div
+            *ngIf="isValid('message')"  
+            class="form-text">{{ "contact.modal.body.message" | translate }}
+        </div>
+    </div>
+
+    <!-- <div class="mb-5">
+        <trix-editor
+            angular-trix 
+            ng-model="foo"
+            id="trix"
+            class="form-control"
+            placeholder="Escribe tu mensaje aquí"
+            style="height: auto;">
+        </trix-editor>
+        <div
+            *ngIf="this.message" 
+            class="form-text">Escriba su mensaje.
+        </div>
+    </div> -->
+    
+    <button type="submit" class="btn btn-primary">{{ "contact.modal.body.submit" | translate | titlecase }}</button>
+    
+</form>
+
+<div
+    *ngIf="spinner"
+    class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+    <div class="sk-cube sk-cube9"></div>
+</div>
+
+<div 
+    *ngIf="this.success"
+    class="alert alert-success mt-5" 
+    role="alert">
+    {{ "contact.modal.response.message" | translate }}
+</div>

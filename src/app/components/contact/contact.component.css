@@ -1,0 +1,22 @@
+.contacto {
+    position: absolute;
+    width: 97%;
+    height: auto;
+    text-align: center;
+}
+
+.contacto li,
+a.LI-simple-link {
+  list-style: none;
+  margin: auto 30px;
+  display: inline-block;
+  font-size: 80px;
+}
+.contacto li a,
+a i {
+  text-decoration: none;
+  transform-style: none;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0;
+  border-radius: 80%;
+}

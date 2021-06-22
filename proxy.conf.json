@@ -1,0 +1,8 @@
+{
+    "/workflows/*": {
+        "target": "https://prod-89.eastus.logic.azure.com:443",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

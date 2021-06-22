@@ -1,0 +1,14 @@
+.navbar-brand {
+  font-weight: bold;
+}
+
+.item-nav:hover {
+  background: rgb(213, 216, 220, .2);
+  border-radius: 5px;
+}
+
+.nav-link {
+  width: 7rem;
+  text-align: center;
+  font-weight: bold;
+}
