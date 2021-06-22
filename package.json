@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --prod --base-href=/mn-profile/"
+    "deploy": "ng build --prod --base-href=dist/mn-profile/"
   },
   "private": true,
   "dependencies": {
