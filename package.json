@@ -23,6 +23,7 @@
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
     "angular-trix": "^1.0.2",
+    "ngx-skeleton-loader": "^2.10.0",
     "ngx-toastr": "^14.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",

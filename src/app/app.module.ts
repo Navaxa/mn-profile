@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -55,7 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    LoadingBarRouterModule
+    LoadingBarRouterModule,
+    NgxSkeletonLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent],

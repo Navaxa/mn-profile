@@ -8,9 +8,15 @@ import { Certified } from 'src/app/models/certified';
 })
 export class CertifiedItemComponent implements OnInit {
 
-  @Input() itemCertified: Certified[] = [];
 
-  constructor() { }
+  @Input() itemCertified: Certified[] = [];
+  skeleton: boolean = true;
+
+  constructor() { 
+      setTimeout(() => {
+        this.skeleton = false;
+      }, 1800);
+  }
 
   ngOnInit(): void {
   }
