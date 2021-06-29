@@ -44,13 +44,13 @@ export class SkillsComponent implements OnInit {
     {
       name: 'node Js',
       img: 'https://img2.freepng.es/20180410/qgw/kisspng-node-js-javascript-database-mongodb-native-5acd4ebf6b4b75.3634484415234044794395.jpg',
-      start: 4,
+      start: 3,
       area: 'ldn'
     },
     {
       name: 'java',
       img: 'http://www.manualweb.net/img/logos/java.png',
-      start: 4,
+      start: 3,
       area: 'ldn'
     },
     {
@@ -62,7 +62,7 @@ export class SkillsComponent implements OnInit {
     {
       name: 'mySQL',
       img: 'https://www.neolo.com/blog/wp-content/uploads/2016/02/mysql.png',
-      start: 4,
+      start: 3,
       area: 'db'
     },
     {
@@ -80,19 +80,19 @@ export class SkillsComponent implements OnInit {
     {
       name: 'azure',
       img: 'https://play-lh.googleusercontent.com/TckA-A_COVAujJtzvpgGhwVkkYCBEDbZe-GLaA9kVbZra1Vcoy7oPXCUG3y0GP2AZg',
-      start: 3,
+      start: 2,
       area: 'deployment'
     },
     {
       name: 'git',
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0_2-7Wfkt3qIOPRGnFiePq8Af4i_cIedoWAAb4rdyfalsBvkiCo8XsJAYC8zams_uIwE&usqp=CAU',
-      start: 4,
+      start: 3,
       area: 'other'
     },
     {
       name: 'github',
       img: 'https://hangekiouchi.online/wp-content/uploads/2020/05/partner-logo-githubenterprise.png',
-      start: 4,
+      start: 3,
       area: 'other'
     }
   ];

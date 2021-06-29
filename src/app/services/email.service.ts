@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment  } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -13,7 +14,7 @@ const httpOptions = {
 })
 export class EmailService {
 
-  private url: string = "https://prod-89.eastus.logic.azure.com:443/workflows/0ddda4613c4b4f17a986806c4f5228f4/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=T84bXVfYhGc6llKpaKYn44JAEfPOVolKtwTOUPmG1eA";
+  private url: string = environment.url;
 
   constructor(private http: HttpClient) { }
 

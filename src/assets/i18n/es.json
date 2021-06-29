@@ -19,7 +19,7 @@
     },
     "skills": {
         "item": {
-            "stack": "pila completa",
+            "stack": "pila tecnológica",
             "bl": "logica de negocio",
             "db": "bases de datos",
             "deploy": "despliegue",

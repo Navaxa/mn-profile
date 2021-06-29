@@ -20,7 +20,7 @@
     },
     "skills": {
         "item": {
-            "stack": "Stack",
+            "stack": "Tech stack",
             "bl": "business logic",
             "db": "database",
             "deploy": "deployment",
