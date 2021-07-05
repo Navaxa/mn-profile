@@ -11,6 +11,7 @@
             <input 
                 type="text" 
                 class="form-control"
+                [ngClass]="{'is-invalid': isValid('name')}"
                 formControlName="name"
                 name="name"
                 >
@@ -27,6 +28,7 @@
             <input 
                 type="text" 
                 class="form-control"
+                [ngClass]="{'is-invalid': isValid('subject')}"
                 formControlName="subject"
                 >
             <div
@@ -43,6 +45,7 @@
             class="form-control" 
             aria-describedby="emailHelp"
             formControlName="email"
+            [ngClass]="{'is-invalid': isValid('email') || isEmail()}"
             >
         <div 
             *ngIf="isValid('email') || isEmail()" 
@@ -54,6 +57,7 @@
         class="form-floating my-5">
         <textarea 
             class="form-control" 
+            [ngClass]="{'is-invalid': isValid('message')}"
             placeholder="Leave a comment here"
             formControlName="message"></textarea>
         <label>{{ "contact.modal.body.message" | translate }}</label>

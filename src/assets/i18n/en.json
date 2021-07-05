@@ -30,7 +30,8 @@
     "portfolio": {
         "description-ns": "Web application focused on renewable energies",
         "description-ycm": "Web application to donate food in Mexico",
-        "button": "see" 
+        "button": "see",
+        "nameMN": "miguel nava first version" 
     },
     "certified": {
         "button": "see"
