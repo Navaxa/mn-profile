@@ -14,7 +14,8 @@
         "resume": "curriculum",
         "button": {
             "view": "Ver curriculum",
-            "close": "cerrar"
+            "close": "cerrar",
+            "resume": "Descargar"
         }
     },
     "skills": {

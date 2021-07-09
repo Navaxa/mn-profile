@@ -21,6 +21,7 @@
                         {{ "about.text" | translate }}
                     </p>
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="btn btn-primary">{{ "about.button.view" | translate | titlecase }}</a>
+                    <a  href="example.com/uploads/file.pdf" download="file_new_name.pdf"></a>
                 </div>
             </div>
         </div>
@@ -56,6 +57,8 @@
 
                 </div>
                 <div class="modal-footer">
+                    <a target="_self" href="./assets/documents/resume.pdf" download="resume.pdf" class="btn btn-primary">{{ "about.button.resume" | translate | titlecase }}</a>
+
                     <button 
                         type="button" 
                         class="btn btn-secondary" 
