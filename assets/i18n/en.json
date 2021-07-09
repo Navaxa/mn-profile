@@ -15,7 +15,8 @@
         "resume": "resume",
         "button": {
             "view": "see resume",
-            "close": "close"
+            "close": "close",
+            "resume": "Download"
         }
     },
     "skills": {
