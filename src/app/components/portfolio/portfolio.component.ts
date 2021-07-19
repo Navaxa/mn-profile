@@ -16,6 +16,12 @@ export class PortfolioComponent implements OnInit {
 
     this.itemP = [
       {
+        name: 'portfolio.nameVirdebo',
+        description: 'Node js + Express + Angular + MySQL',
+        urlImg: './assets/statics/img/virdebo.jpg',
+        urlPortfolio: 'https://sivirdebo.com/'
+      },    
+      {
         name: 'cotizador criptomonedas',
         description: 'React Js',
         urlImg: './assets/statics/img/cotizador_crypto.PNG',
