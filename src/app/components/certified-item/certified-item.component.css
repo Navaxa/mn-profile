@@ -1,0 +1,30 @@
+img {
+    border: 2px solid black;
+}
+
+.title h5 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.entity {
+    font-size: 20px;
+}
+
+.button {
+    height: 100%;
+    padding-top: 240px;
+}
+
+@media(max-width: 790px){
+    .title h5 {
+        font-size: 25px;
+    }
+    .button {
+        height: 10%;
+        padding-top: 0px;
+    }
+} 

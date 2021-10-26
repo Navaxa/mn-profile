@@ -2,3 +2,7 @@
 body{
     font-family: 'Rubik', sans-serif;
 }
+::selection{
+  color: #fff;
+  background: rgba(213, 216, 220, .2);
+}

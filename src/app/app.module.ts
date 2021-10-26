@@ -22,6 +22,7 @@ import { FormComponent } from './components/form/form.component';
 import { CertifiedsComponent } from './components/certifieds/certifieds.component';
 import { CertifiedItemComponent } from './components/certified-item/certified-item.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,7 +41,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioItemComponent,
     FormComponent,
     CertifiedsComponent,
-    CertifiedItemComponent
+    CertifiedItemComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
