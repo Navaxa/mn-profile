@@ -134,7 +134,7 @@ html{
     left: -60px;
   }
 }
-@media(max-width: 440px){
+@media(max-width: 400px){
   .wrapper .center-line,
   .row section::before,
   .row section .icon{
